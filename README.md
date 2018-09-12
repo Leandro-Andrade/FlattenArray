@@ -1,5 +1,5 @@
 # FlattenArray
-Converts a nested jagged array into a flat, single array of integers
+Converts a nested jagged array (e.g. `[[1,2,[3]],4]`) into a flat (`[1,2,3,4]`), single array of integers
 
 # Requirements
 .NET Core
