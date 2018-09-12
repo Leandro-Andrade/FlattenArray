@@ -8,8 +8,7 @@ namespace FlattenArray.Tests
         [ClassData(typeof(NestedArraysTestData))]
         public void PassingNestedMultidimensionalArraysOfInt_ReturnsFlatArrayOfInt(object[] nestedArray, int[] expectedArray)
         {
-            var sut = new ArrayHelper();
-            var actualResult = sut.ToFlat(nestedArray);
+            var actualResult = nestedArray.ToFlat();
 
             Assert.Equal(expectedArray.Length, actualResult.Length);
 
