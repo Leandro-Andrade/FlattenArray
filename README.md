@@ -2,11 +2,17 @@
 Converts a nested jagged array into a flat, single array of integers
 
 # Requirements
-.NET Core 2.0 or above
+.NET Core
 
 # How to use it
-1. Import the library and instantiate the ArrayHelper.
-2. Use the method `ToFlat()` to convert it.
+1. Import the dll as a reference or add the project into your solution and reference it.
+2. Use the extension method method `.ToFlat()` to any array of objects you may have. 
+Example:
+```
+var myNestedArray = new object[] {1, 2, new object[] {new object[] {3}}};
+var flatArray = myNestedArray.ToFlat();
+``` 
+
 3. It returns an array of integers `int[]`.
 
 ## Constraints
